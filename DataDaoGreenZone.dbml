@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="greenzone" EntityNamespace="DataDaoGreenZone" Class="DaoGreenZone" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=FILE01\SQLEXPRESS;Initial Catalog=greenzone;User ID=sa" SettingsObjectName="Alertas.My.MySettings" SettingsPropertyName="greenzoneConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.facvecab" Member="facvecabs">
+    <Type Name="facvecab">
+      <Column Name="fac_codigo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fac_tipcom" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_tipmov" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_fecha" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="fac_tipo" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_ptovta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fac_numero" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cli_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fac_descue" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_neto1" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_neto2" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_iva1" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_iva2" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_poriv1" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_poriv2" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_periva" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_perib" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_total" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_anulad" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="cli_nombre" Type="System.String" DbType="Char(50) NOT NULL" CanBeNull="false" />
+      <Column Name="cli_cuit" Type="System.String" DbType="Char(13) NOT NULL" CanBeNull="false" />
+      <Column Name="iva_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pro_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cli_locali" Type="System.String" DbType="Char(50) NOT NULL" CanBeNull="false" />
+      <Column Name="cli_codpos" Type="System.String" DbType="Char(8) NOT NULL" CanBeNull="false" />
+      <Column Name="cli_domici" Type="System.String" DbType="Char(50) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_cai" Type="System.String" DbType="Char(14) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_caiven" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="fac_hojas" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="asi_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fac_forpag" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fac_cuoimp" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_cuocan" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="fac_dolar" Type="System.Decimal" DbType="Decimal(8,3) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_moneda" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="usu_fecacc" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="usu_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pco_codigo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="fac_impint" Type="System.Decimal" DbType="Decimal(9,2) NOT NULL" CanBeNull="false" />
+      <Column Name="dep_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fac_flete" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_recargo" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_descue1" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_descue2" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_fecven" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

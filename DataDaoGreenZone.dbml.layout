@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 11" name="DataDaoGreenZone">
+  <DataContextMoniker Name="/DaoGreenZone" />
+  <nestedChildShapes>
+    <classShape Id="6b0b626f-d241-4045-81d2-59149476abdc" absoluteBounds="4, 1.25, 2, 9.4629541015625">
+      <DataClassMoniker Name="/DaoGreenZone/facvecab" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b447ce7f-cb01-46e6-8603-e31f5fd4c2b8" absoluteBounds="4.015, 1.71, 1.9700000000000002, 8.9029541015625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

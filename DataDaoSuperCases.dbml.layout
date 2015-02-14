@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 10.875" name="DataDaoSuperCases">
+  <DataContextMoniker Name="/DaoSuperCases" />
+  <nestedChildShapes>
+    <classShape Id="388e040c-7fbe-4598-915f-37aae5603e76" absoluteBounds="4.875, 1.125, 2, 9.4629541015625">
+      <DataClassMoniker Name="/DaoSuperCases/facvecab" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b6693518-d1b9-4ba3-bf19-30b1f1973e35" absoluteBounds="4.89, 1.585, 1.9700000000000002, 8.9029541015625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

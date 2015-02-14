@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="puntodeventa" EntityNamespace="DataDao" Class="Dao" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ultra;Initial Catalog=puntodeventa;Persist Security Info=True;User ID=sa" SettingsObjectName="Alertas.My.MySettings" SettingsPropertyName="EtertinConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.facvecab" Member="facvecabs">
+    <Type Name="facvecab">
+      <Column Name="fac_codigo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fac_tipcom" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_tipmov" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_fecha" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="fac_tipo" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_ptovta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fac_numero" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cli_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fac_descue" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_neto1" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_neto2" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_iva1" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_iva2" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_poriv1" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_poriv2" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_periva" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_perib" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_total" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_anulad" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="cli_nombre" Type="System.String" DbType="Char(50) NOT NULL" CanBeNull="false" />
+      <Column Name="cli_cuit" Type="System.String" DbType="Char(13) NOT NULL" CanBeNull="false" />
+      <Column Name="iva_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pro_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cli_locali" Type="System.String" DbType="Char(50) NOT NULL" CanBeNull="false" />
+      <Column Name="cli_codpos" Type="System.String" DbType="Char(8) NOT NULL" CanBeNull="false" />
+      <Column Name="cli_domici" Type="System.String" DbType="Char(50) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_cai" Type="System.String" DbType="Char(14) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_caiven" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="fac_hojas" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="asi_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fac_forpag" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fac_cuoimp" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_cuocan" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="fac_dolar" Type="System.Decimal" DbType="Decimal(8,3) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_moneda" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="usu_fecacc" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="usu_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pco_codigo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="fac_impint" Type="System.Decimal" DbType="Decimal(9,2) NOT NULL" CanBeNull="false" />
+      <Column Name="dep_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fac_flete" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_recargo" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_descue1" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_descue2" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_fecven" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.param" Member="params">
+    <Type Name="param">
+      <Column Name="par_codigo" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="par_empres" Type="System.String" DbType="Char(50) NOT NULL" CanBeNull="false" />
+      <Column Name="par_cuit" Type="System.String" DbType="Char(13) NOT NULL" CanBeNull="false" />
+      <Column Name="par_coniva" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="par_nroib" Type="System.String" DbType="Char(15) NOT NULL" CanBeNull="false" />
+      <Column Name="pla_ivavta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pla_valdep" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pla_caja" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pla_tarcre" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pla_ctacte" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pla_credit" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pla_periva" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pla_perib" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pla_ctaprv" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fac_lis_a" Type="System.String" DbType="Char(20) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_lis_b" Type="System.String" DbType="Char(20) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_lis_c" Type="System.String" DbType="Char(20) NOT NULL" CanBeNull="false" />
+      <Column Name="fac_lis_e" Type="System.String" DbType="Char(20) NOT NULL" CanBeNull="false" />
+      <Column Name="par_membrete1" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="par_membrete2" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="PAR_SMTP_SERVER" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PAR_SMTP_USUARIO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PAR_SMTP_CLAVE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PAR_SMTP_MAIL" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="PAR_SMTP_CUENTA" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="par_retib" Type="System.Decimal" DbType="Decimal(9,2) NOT NULL" CanBeNull="false" />
+      <Column Name="par_retib_altoriesgo" Type="System.Decimal" DbType="Decimal(9,2) NOT NULL" CanBeNull="false" />
+      <Column Name="par_retib_minimo" Type="System.Decimal" DbType="Decimal(9,2) NOT NULL" CanBeNull="false" />
+      <Column Name="par_retener_ib" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="par_retener_ganancias" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="par_retener_iva" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="par_retener_ap" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="par_ta_path" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="par_wsdl" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="par_smtp_port" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="par_smtp_ssl" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.depositos" Member="depositos">
+    <Type Name="deposito">
+      <Column Name="dep_codigo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="dep_descri" Type="System.String" DbType="Char(50) NOT NULL" CanBeNull="false" />
+      <Column Name="dep_activo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="dep_factur" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="deposito_stock" Member="stocks" ThisKey="dep_codigo" OtherKey="dep_codigo" Type="stock" />
+    </Type>
+  </Table>
+  <Table Name="dbo.stock" Member="stocks">
+    <Type Name="stock">
+      <Column Name="art_codigo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="dep_codigo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="art_stock" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="art_tomado" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="usu_fecacc" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="usu_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="deposito_stock" Member="deposito" ThisKey="dep_codigo" OtherKey="dep_codigo" Type="deposito" IsForeignKey="true" />
+      <Association Name="articulo_stock" Member="articulo" ThisKey="art_codigo" OtherKey="art_codigo" Type="articulo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.articulos" Member="articulos">
+    <Type Name="articulo">
+      <Column Name="art_codigo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="prv_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="art_numero" Type="System.String" DbType="Char(20) NOT NULL" CanBeNull="false" />
+      <Column Name="art_barra" Type="System.String" DbType="Char(20) NOT NULL" CanBeNull="false" />
+      <Column Name="art_descri" Type="System.String" DbType="Char(50) NOT NULL" CanBeNull="false" />
+      <Column Name="art_observ" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="rub_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="sub_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="at1_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="at2_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="at3_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="art_poriva" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
+      <Column Name="art_costo" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="art_moneda" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="art_precio" Type="System.Decimal" DbType="Decimal(12,2) NOT NULL" CanBeNull="false" />
+      <Column Name="art_noveda" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="art_oferta" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="art_stomin" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="art_stomax" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="art_detall" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="art_activo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="art_combo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="pla_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="art_fecalt" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="usu_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="usu_fecacc" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="art_fabcodigo" Type="System.String" DbType="Char(20) NOT NULL" CanBeNull="false" />
+      <Column Name="mar_codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="art_ultfeccom" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="art_ultfecmodcos" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="art_unicom" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="art_peso" Type="System.Decimal" DbType="Decimal(9,2) NOT NULL" CanBeNull="false" />
+      <Column Name="art_descri2" Type="System.String" DbType="Char(50) NOT NULL" CanBeNull="false" />
+      <Column Name="art_impcom" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="art_markup" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
+      <Column Name="art_impint" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="art_costo_anterior" Type="System.Decimal" DbType="Decimal(9,2) NOT NULL" CanBeNull="false" />
+      <Column Name="art_despacho" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="art_alto" Type="System.Decimal" DbType="Decimal(9,2) NOT NULL" CanBeNull="false" />
+      <Column Name="art_ancho" Type="System.Decimal" DbType="Decimal(9,2) NOT NULL" CanBeNull="false" />
+      <Column Name="art_profundidad" Type="System.Decimal" DbType="Decimal(9,2) NOT NULL" CanBeNull="false" />
+      <Association Name="articulo_stock" Member="stocks" ThisKey="art_codigo" OtherKey="art_codigo" Type="stock" />
+      <Association Name="rubro_articulo" Member="rubro" ThisKey="rub_codigo" OtherKey="rub_codigo" Type="rubro" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.rubros" Member="rubros">
+    <Type Name="rubro">
+      <Column Name="rub_codigo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="rub_descri" Type="System.String" DbType="Char(50) NOT NULL" CanBeNull="false" />
+      <Association Name="rubro_articulo" Member="articulos" ThisKey="rub_codigo" OtherKey="rub_codigo" Type="articulo" />
+    </Type>
+  </Table>
+  <Table Name="dbo.dolar" Member="dolars">
+    <Type Name="dolar">
+      <Column Name="dol_fecha" Type="System.DateTime" DbType="SmallDateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="dol_compra" Type="System.Decimal" DbType="Decimal(7,3) NOT NULL" CanBeNull="false" />
+      <Column Name="dol_venta" Type="System.Decimal" DbType="Decimal(7,3) NOT NULL" CanBeNull="false" />
+      <Column Name="dol_codigo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="dol_venta_bna" Type="System.Decimal" DbType="Decimal(7,3) NOT NULL" CanBeNull="false" />
+      <Column Name="usu_fecalt" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="usu_codigo_alt" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="usu_fecacc" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="usu_codigo_edi" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
